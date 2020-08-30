@@ -5,11 +5,11 @@
     <div class="main">
         <div class="photo">
             <a href="{{ Storage::disk('s3')->url("{$cast->image_url3}") }}">
-            <img src="{{ Storage::disk('s3')->url("{$cast->image_url3}") }}" alt="{{ $cast->name }}">
+                <img src="{{ Storage::disk('s3')->url("{$cast->image_url3}") }}" alt="{{ $cast->name}}">
             </a>
         </div>
         <div class="icon pc-none">
-            <img src="{{ asset('storage/img/search.png') }}" alt="">
+            <img src="{{ asset('strorage/img/search.png') }}" alt="">
         </div>
         <div class="center">
             <div class="prof clearfix">
@@ -247,12 +247,31 @@
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
         <div class="clearfix" pc-none></div>
         <div class="sp-comment pc-none"></div>
-        <div class="main-sp-photo pcnone"></div>
+        <div class="main-sp-photo pc-none">
+            <div class="detail">
+                <div class="image">
+                    <<a href="{{ Storage::disk('s3')->url("{$cast->image_url4}") }}">
+                        <img src="{{ Storage::disk('s3')->url("{$cast->image_url4}") }}">
+                        <div class="icon pc-none">
+                            <img src="{{ asset('storage/img/search.png') }}" alt="拡大表示">
+                        </div>
+                    </a>
+                </div>
+                <div class="img">
+                    <a href="{{ Storage::disk('s3')->url("{$cast->image_url5}") }}">
+                        <img src="{{ Storage::disk('s3')->url("{cast->image_url5}") }}">
+                        <div class="icon pc-none">
+                            <img src="{{ asset('strage/img/search') }}" alt="拡大表示">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="photo sp-none">
-            <img src="{{ Storage::disk('s3')->url("{$cast->image_url4}") }}" alt="">
+            <img src="{{ Storage::disk('s3')->url("{$cast->image_url3}") }}">
 
         </div>
         <div class="content">
@@ -353,19 +372,27 @@
                         <source src="{{ Storage::disk('s3')->url("{$cast->movie}") }}" type="video/mp4">
                     </video>
                 </div>
-                <div class="main-sp-photo pc-none"></div>
-                <h2></h2>
-                <h3></h3>
-                <ul></ul>
-            </div>
-            <div class="photo sp-none"></div>
-            <div class="diary"></div>
-        </div>
-        <div style="margin-bottom: -100px;"></div>
-        <div id="weekly" style="padding-top: 100px;"></div>
-        <div class="prof-week"></div>
-        <div class="contact sp-none"></div>
-        <div class="sp-f-contents pc-none"></div>
+                <div class="main-sp-photo pc-none">
+                    <div class="detail">
+                        <div class="image">
+                            <a href="{{ Storage::disk('s3')->url("{$cast->image_url6}") }}">
+                                <img src="{{ Storage::disk('s3')->url("{$cast->image_url6}") }}">
+                                <div class="icon pc-none">
+                                    <img src="{{ asset('storage/img/search.png') }}" alt="拡大表示">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="image">
+                            <a href="{{ Storage::disk('s3')->url("{$cast->image_url7}") }}">
+                                <img src="{{ Storage::disk('s3')->url("{$cast->image_url7}") }}">
+                                <div class="icon pc-none">
+                                    <img src="{{ asset('storage/img/search.png') }}" alt="拡大表示">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
 </div>    
         
     
