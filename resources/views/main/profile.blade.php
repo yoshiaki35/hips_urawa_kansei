@@ -403,144 +403,162 @@
                     <li>
                         <div class="option-list">
                             <div class="left">
-                                <p>あいますく</p>
+                                <p>お顔に発射</p>
                             </div>
                             <div class="right">
-                                <p></p>
+                                <p>{{ $cast->option3->name }}</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="option-list">
                             <div class="left">
-                                <p>あいますく</p>
+                                <p>おしっこ見学</p>
                             </div>
                             <div class="right">
-                                <p></p>
+                                <p>{{ $cast->option4->name }}</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="option-list">
                             <div class="left">
-                                <p>あいますく</p>
+                                <p>ばいぶ</p>
                             </div>
                             <div class="right">
-                                <p></p>
+                                <p>{{ $cast->option5->name }}</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="option-list">
                             <div class="left">
-                                <p>あいますく</p>
+                                <p>電ま</p>
                             </div>
                             <div class="right">
-                                <p></p>
+                                <p>{{ $cast->option6->name }}</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="option-list">
                             <div class="left">
-                                <p>あいますく</p>
+                                <p>おなに～見学</p>
                             </div>
                             <div class="right">
-                                <p></p>
+                                <p>{{ $cast->option7->name  }}</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="option-list">
                             <div class="left">
-                                <p>あいますく</p>
+                                <p>の～ぱん</p>
                             </div>
                             <div class="right">
-                                <p></p>
+                                <p>{{ $cast->option8->name }}</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="option-list">
                             <div class="left">
-                                <p>あいますく</p>
+                                <p>精子こっくん</p>
                             </div>
                             <div class="right">
-                                <p></p>
+                                <p>{{ $cast->option9->name }}</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="option-list">
                             <div class="left">
-                                <p>あいますく</p>
+                                <p>こすぷれ</p>
                             </div>
                             <div class="right">
-                                <p></p>
+                                <p>{{ $cast->option10->name }}</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="option-list">
                             <div class="left">
-                                <p>あいますく</p>
+                                <p>あなるふぁっく</p>
                             </div>
                             <div class="right">
-                                <p></p>
+                                <p>{{ $cast->option11->name }}</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="option-list">
                             <div class="left">
-                                <p>あいますく</p>
+                                <p>即ぱく</p>
                             </div>
                             <div class="right">
-                                <p></p>
+                                <p>{{ $cast->option12->name }}</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="option-list">
                             <div class="left">
-                                <p>あいますく</p>
+                                <p>自宅出張</p>
                             </div>
                             <div class="right">
-                                <p></p>
+                                <p>{{ $cast->option13->name }}</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="option-list">
                             <div class="left">
-                                <p>あいますく</p>
+                                <p>3P</p>
                             </div>
                             <div class="right">
-                                <p></p>
+                                <p>{{ $cast->option14->name}}</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="option-list">
                             <div class="left">
-                                <p>あいますく</p>
+                                <p>潮吹き</p>
                             </div>
                             <div class="right">
-                                <p></p>
+                                <p>{{$cast->option15->name }}</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="option-list">
                             <div class="left">
-                                <p>あいますく</p>
+                                <p>コスプレイメージプレイ</p>
                             </div>
                             <div class="right">
-                                <p></p>
+                                <p>{{ $cast->option16->name }}</p>
                             </div>
                         </div>
                     </li>
                 </ul>
+
+
+            </div>
+            <div class="photo sp-none">
+                <img src="{{ Storage::disk('s3')->url("{$cast->image_url5}") }}">
+            </div>
+            <div class="diary">
+                <h2>
+                    <span>P</span>
+                    hoto
+                    <span>D</span>
+                    iary
+                </h2>
+                <h3>写メ日記</h3>
+                <div class="iframe">
+                    <iframe src="https://www.dto.jp/shop/3485/diary-widget-v4?g={{ $cast->dto_id }} &dt=1&=l=11&fc=000000&if=dto-dw4-3485-{{ $cast->dto_id }}" style="height: 1310px;" frameborder="0" class="dto-dw4" id="dto-dw4-3485-{{ $cast->dto_id }}" width="100%" frameborder="0" scrolling="no">
+                    </iframe>
+                </div>
             </div>
         </div>
         
