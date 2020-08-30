@@ -286,72 +286,72 @@
                 <li>
                     <p class="faq-q">
                         <i class="fa fa-angle-right"></i>
-                        "血液型"
+                        "出勤"
                     </p>
-                    <p class="faq-a">{{ $cast->bloodltype->name}} </p>
+                    <p class="faq-a">{{ $cast->goingtowork}} </p>
                 </li>
                 <li>
                     <p class="faq-q">
                         <i class="fa fa-angle-right"></i>
-                        "血液型"
+                            性格
                     </p>
-                    <p class="faq-a">{{ $cast->bloodltype->name}} </p>
+                    <p class="faq-a">{{ $cast->personality}} </p>
                 </li>
                 <li>
                     <p class="faq-q">
                         <i class="fa fa-angle-right"></i>
-                        "血液型"
+                            SorM
                     </p>
-                    <p class="faq-a">{{ $cast->bloodltype->name}} </p>
+                    <p class="faq-a">{{ $cast->sorm}} </p>
                 </li>
                 <li>
                     <p class="faq-q">
                         <i class="fa fa-angle-right"></i>
-                        "血液型"
+                            タバコ
                     </p>
-                    <p class="faq-a">{{ $cast->bloodltype->name}} </p>
+                    <p class="faq-a">{{ $cast->cigarettes}} </p>
                 </li>
                 <li>
                     <p class="faq-q">
                         <i class="fa fa-angle-right"></i>
-                        "血液型"
+                            出身地
                     </p>
-                    <p class="faq-a">{{ $cast->bloodltype->name}} </p>
+                    <p class="faq-a">{{ $cast->kenmei->name}} </p>
                 </li>
                 <li>
                     <p class="faq-q">
                         <i class="fa fa-angle-right"></i>
-                        "血液型"
+                            得意プレイ
                     </p>
-                    <p class="faq-a">{{ $cast->bloodltype->name}} </p>
+                    <p class="faq-a">{{ $cast->goodplay}} </p>
                 </li>
                 <li>
                     <p class="faq-q">
                         <i class="fa fa-angle-right"></i>
-                        "血液型"
+                            チャームポイント
                     </p>
-                    <p class="faq-a">{{ $cast->bloodltype->name}} </p>
+                    <p class="faq-a">{{ $cast->charmpoint}}</p>
                 </li>
                 <li>
                     <p class="faq-q">
                         <i class="fa fa-angle-right"></i>
-                        "血液型"
+                            趣味・特技
                     </p>
-                    <p class="faq-a">{{ $cast->bloodltype->name}} </p>
+                    <p class="faq-a">{{ $cast->hobbies_skills}} </p>
                 </li>
                 <li>
                     <p class="faq-q">
                         <i class="fa fa-angle-right"></i>
-                        "血液型"
+                            好きな異性のタイプ
                     </p>
-                    <p class="faq-a">{{ $cast->bloodltype->name}} </p>
+                    <p class="faq-a">{{ $cast->favoriteoppositesextype}} </p>
                 </li>
                 <li>
                     <p class="faq-q">
                         <i class="fa fa-angle-right"></i>
-                        "血液型"
+                            今一番欲しいもの
                     </p>
-                    <p class="faq-a">{{ $cast->bloodltype->name}} </p>
+                    <p class="faq-a">{{ $cast->whatIwantmostnow}} </p>
                 </li>
 
             </ul>
@@ -361,38 +361,189 @@
                 <div class="sp-none">
                     <h2>
                         <span>S</span>
-                        "elf"
+                        elf
                         <span>M</span>
-                        "ovie"
+                        ovie
                     </h2>
                     <h3>自撮り動画</h3>
                 </div>
-                <div class="selfmovie">
-                    <video muted controls autoplay  width="100%">
+                {{--<div class="selfmovie">
+                    <video muted controls width="100%">
                         <source src="{{ Storage::disk('s3')->url("{$cast->movie}") }}" type="video/mp4">
                     </video>
-                </div>
-                <div class="main-sp-photo pc-none">
-                    <div class="detail">
-                        <div class="image">
-                            <a href="{{ Storage::disk('s3')->url("{$cast->image_url6}") }}">
-                                <img src="{{ Storage::disk('s3')->url("{$cast->image_url6}") }}">
-                                <div class="icon pc-none">
-                                    <img src="{{ asset('storage/img/search.png') }}" alt="拡大表示">
-                                </div>
-                            </a>
+                </div>--}}
+                <h2>
+                    <span>O</span>
+                    ption
+                    <span>L</span>
+                    ist
+                </h2>
+                <h3>オプションリスト</h3>
+                <ul>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>あいますく</p>
+                            </div>
+                            <div class="right">
+                                <p>{{ $cast->option1->name }}</p>
+                            </div>
                         </div>
-                        <div class="image">
-                            <a href="{{ Storage::disk('s3')->url("{$cast->image_url7}") }}">
-                                <img src="{{ Storage::disk('s3')->url("{$cast->image_url7}") }}">
-                                <div class="icon pc-none">
-                                    <img src="{{ asset('storage/img/search.png') }}" alt="拡大表示">
-                                </div>
-                            </a>
+                    </li>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>ぴんくろ～た～</p>
+                            </div>
+                            <div class="right">
+                                <p>{{ $cast->option2->name }}</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
+                    </li>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>あいますく</p>
+                            </div>
+                            <div class="right">
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>あいますく</p>
+                            </div>
+                            <div class="right">
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>あいますく</p>
+                            </div>
+                            <div class="right">
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>あいますく</p>
+                            </div>
+                            <div class="right">
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>あいますく</p>
+                            </div>
+                            <div class="right">
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>あいますく</p>
+                            </div>
+                            <div class="right">
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>あいますく</p>
+                            </div>
+                            <div class="right">
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>あいますく</p>
+                            </div>
+                            <div class="right">
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>あいますく</p>
+                            </div>
+                            <div class="right">
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>あいますく</p>
+                            </div>
+                            <div class="right">
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>あいますく</p>
+                            </div>
+                            <div class="right">
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>あいますく</p>
+                            </div>
+                            <div class="right">
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>あいますく</p>
+                            </div>
+                            <div class="right">
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option-list">
+                            <div class="left">
+                                <p>あいますく</p>
+                            </div>
+                            <div class="right">
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
 </div>    
         
     
