@@ -274,6 +274,7 @@
             <img src="{{ Storage::disk('s3')->url("{$cast->image_url3}") }}">
 
         </div>
+    </div>    
         <div class="content">
             <ul>
                 <li>
@@ -561,8 +562,71 @@
                 </div>
             </div>
         </div>
-        
-</div>    
-        
-    
+        <div style="margin-bottom: -100px;"></div>
+        <div id="weekly" style="padding-top: 100px;"></div>
+        <div class="profile-week">
+            <h3>{{ $cast->name}}さん出勤情報</h3>
+            <h2>WEEKLY SCHEDULES</h2>
+            <ul>
+                <li>
+                    <p>{{ Carbon\Carbon::now()->isoFormat('MM月DD日') }}</p>
+                    <spam>{{ $cast->schedule1 }}</spam>
+                </li>
+                <li>
+                    <p>{{ Carbon\Carbon::now()->addDay(1)->isoFormat('MM月DD日') }}</p>
+                    <span>{{ $cast->schedule2 }}</span>
+                </li>
+                <li>
+                    <p>{{ Carbon\Carbon::now()->addDay(2)->isoFormat('MM月DD日') }}</p>
+                    <span>{{ $cast->schedule3 }}</span>
+                </li>
+                <li>
+                    <p>{{ Carbon\Carbon::now()->addDay(4)->isoFormat('MM月DD日') }}</p>
+                    <span>{{ $cast->schedule4 }}</span>
+                </li>
+                <li>
+                    <p>{{ Carbon\Carbon::now()->addDay(5)->isoFormat('MM月DD日') }}</p>
+                    <span>{{ $cast->schedule5 }}</span>
+                </li>
+                <li>
+                    <p>{{ Carbon\Carbon::now()->addDay(6)->isoFormat('MM月DD日') }}</p>
+                    <span>{{ $cast->schedule6 }}</span>
+                </li>
+                <li>
+                    <p>{{ Carbon\Carbon::now()->addDay(7)->isoFormat('MM月DD日') }}</p>
+                    <span>{{ $cast->schedule7 }}</span>
+                </li>
+            <ul>
+        </div>
+        <div class="prof-review">
+            <ul>
+                <li class="photo sp-none">
+                    <img src="{{ Storage::disk('s3')->url("{$cast->image_url6}") }}" alt="">
+                </li>
+                <li class="center">
+                    <h2>
+                        <span>R</span>
+                        eview
+                    </h2>
+                    <h3>お客様の声</h3>
+                    <p class="text">
+                        当店をご利用頂いた感想を、是日お聞かせいただけないでしょうか？
+                        <br>
+                        お客様の様々なご意見によって進化する【ヒップスクループ】にご期待ください
+                        <br>
+                    </p>
+                    <div class="back">
+                        {{--<a href="profile-post/2" class="popup-inframe">
+                            <div class="button_base2 b03_skewed_slide_in"></div>
+                                <div>投稿フォームはコチラ</div>
+                                <div></div>
+                                <div>投稿フォームはコチラ</div>
+                        </a>--}}
+                    </div>
+                </li>
+                <li class="photo sp-none">
+                    <img src="{{ Storage::disk('s3')->url("{$cast->image_url7}") }}"/ alt="">
+                </li>
+            </ul>
+        </div>
 @endsection

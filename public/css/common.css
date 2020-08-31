@@ -5898,7 +5898,7 @@ header .shift .people .label {
         width: 50%;
         height: 40px;
         border: 1px solid #000;
-        -webkit-box-sizing: border-box
+        box-sizing: border-box
     }
 
     #option h2 {
@@ -8114,7 +8114,7 @@ header .shift .people .label {
     .review li .detail .comment img {
         display: inline;
         width: 85px;
-        height: 85px
+        height: 85px;
     }
 
     .review li .detail .image {
@@ -12071,8 +12071,8 @@ header .shift .people .label {
         left: 50%;
         width: 250px;
         height: 40px;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        box-sizing: border-box;
         cursor: default;
         line-height: 1.8
     }
@@ -12091,8 +12091,8 @@ header .shift .people .label {
         position: absolute;
         width: 100%;
         height: 50px;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        box-sizing: border-box;
         padding: 5px
     }
 
@@ -12390,7 +12390,7 @@ header .shift .people .label {
 .overlay,
 .wrapper {
     height: 100%;
-    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
     width: 100%
 }
 
