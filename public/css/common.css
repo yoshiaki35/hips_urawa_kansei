@@ -10326,7 +10326,7 @@ header .shift .people .label {
 
 .contact {
     padding: 50px 0 90px;
-    background-image: url(../img/contact-bg.jpg);
+    background-image: url("../img/contact-bg.jpg");
     background-size: cover
 }
 
